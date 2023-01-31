@@ -1,0 +1,50 @@
+* { 
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+}
+
+@font-face {
+  font-family: zhanku;
+  src: url("/zhanku.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+html,body {
+  background-color: var(--el-bg-color);
+  user-select: none;
+  font-family: zhanku;
+  color: var(--el-text-color-regular);
+  font-size: 14px;
+}
+
+body {
+  padding: 50px 10px 10px 10px;
+}
+
+.el-dialog {
+  width: 80vw !important;
+  max-width: 600px;
+  .el-dialog__body {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none !important;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.el-message {
+  position: fixed;
+  top: 100px !important;
+}
