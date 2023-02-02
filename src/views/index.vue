@@ -26,7 +26,7 @@
       <span class="title">持仓总额：</span>
       <ElTag type="danger">{{ getTotalMoney() }}元</ElTag>
       <span class="title">预估盈亏：</span>
-      <ElTag type="success">{{getResult()}}元</ElTag>
+      <ElTag :type="getResult() >= 0 ? 'danger' : 'success'">{{getResult()}}元</ElTag>
     </div>
   </ElScrollbar>
 </template>

@@ -12,6 +12,9 @@ module.exports = {
         resolvers: [ElementPlusResolver()],
       }),
     ],
+    devServer: {
+      port: 8099
+    }
   },
   pluginOptions: {
     electronBuilder: {
